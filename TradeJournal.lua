@@ -80,7 +80,7 @@ end
 
 local numberWinRate = winrate(winsLosses)
 local lossrate = 1 - numberWinRate
-local expectedValue = (numericWinRate * average_win(profLoss)) - (lossrate * average_loss(profLoss))
+local expectedValue = (numberWinRate * average_win(profLoss)) - (lossrate * average_loss(profLoss))
 
 
 print("Trading Summary")
